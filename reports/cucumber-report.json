@@ -1,0 +1,168 @@
+[
+  {
+    "elements": [
+      {
+        "id": "as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Customer is displayed with amazon.com landing page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I am on amazon page",
+            "result": {
+              "status": "passed",
+              "duration": 8556841600
+            },
+            "line": 4,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\amazon-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"amazonsignin\"",
+            "result": {
+              "status": "passed",
+              "duration": 4452824500
+            },
+            "line": 5,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:17"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "InputName",
+                      "InputValue"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "deepathalaivan@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "I enter single fieldvalue",
+            "result": {
+              "status": "passed",
+              "duration": 2116083200
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"amazoncontinue\"",
+            "result": {
+              "status": "passed",
+              "duration": 4475417900
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:17"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "InputName",
+                      "InputValue"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "deepa123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "I enter single fieldvalue",
+            "result": {
+              "status": "passed",
+              "duration": 2054447700
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"amazonsigninSubmit\"",
+            "result": {
+              "status": "passed",
+              "duration": 4097212900
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:17"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see \"theamazonmessage\"",
+            "result": {
+              "status": "passed",
+              "duration": 6046109000
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 199160200
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@amazon",
+            "line": 2
+          },
+          {
+            "name": "@amazonlogin",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "As a Customer I want to be able to navigate amazon page so that i can view information",
+    "tags": [],
+    "uri": "C:/Users/deepa/workspace/testcase06/features/amazon.feature"
+  }
+]
