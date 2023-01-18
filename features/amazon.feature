@@ -12,3 +12,17 @@ Feature:As a Customer I want to be able to navigate amazon page so that i can vi
             | password  | deepa123   |
         And I click on "amazonsigninSubmit"
         Then I should see "theamazonmessage"
+
+    @amazon @newaccount
+    Scenario:Creating new customer in amazon with exciting email id so that it shows error msg
+        Given I am on amazon page
+        When I click on "amazonsignin"
+        And I click on "amazoncreateaccount"
+        And I enter inputs for login
+            | InputName     | InputValue               |
+            | customerName  | deepa                    |
+            | email         | deepathalaivan@gmail.com |
+            | password      | deepa123                 |
+            | passwordCheck | deepa123                 |
+        And I click on "amazoncontinuebutton"
+        Then I should see "amazonerrormsg"

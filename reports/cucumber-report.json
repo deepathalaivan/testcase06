@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": "as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page",
+        "id": "as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Customer is displayed with amazon.com landing page",
+        "line": 17,
+        "name": "Creating new customer in amazon with exciting email id so that it shows error msg",
         "steps": [
           {
             "arguments": [],
@@ -13,11 +13,11 @@
             "name": "I am on amazon page",
             "result": {
               "status": "passed",
-              "duration": 8556841600
+              "duration": 4494740000
             },
-            "line": 4,
+            "line": 18,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\amazon-steps.js:3"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\amazon-steps.js:4"
             }
           },
           {
@@ -26,11 +26,24 @@
             "name": "I click on \"amazonsignin\"",
             "result": {
               "status": "passed",
-              "duration": 4452824500
+              "duration": 4489359500
             },
-            "line": 5,
+            "line": 19,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:17"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"amazoncreateaccount\"",
+            "result": {
+              "status": "passed",
+              "duration": 4362029600
+            },
+            "line": 20,
+            "match": {
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:25"
             }
           },
           {
@@ -41,6 +54,12 @@
                     "cells": [
                       "InputName",
                       "InputValue"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "customerName",
+                      "deepa"
                     ]
                   },
                   {
@@ -48,47 +67,16 @@
                       "email",
                       "deepathalaivan@gmail.com"
                     ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "name": "I enter single fieldvalue",
-            "result": {
-              "status": "passed",
-              "duration": 2116083200
-            },
-            "line": 6,
-            "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"amazoncontinue\"",
-            "result": {
-              "status": "passed",
-              "duration": 4475417900
-            },
-            "line": 9,
-            "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:17"
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "InputName",
-                      "InputValue"
-                    ]
                   },
                   {
                     "cells": [
                       "password",
+                      "deepa123"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "passwordCheck",
                       "deepa123"
                     ]
                   }
@@ -96,12 +84,12 @@
               }
             ],
             "keyword": "And ",
-            "name": "I enter single fieldvalue",
+            "name": "I enter inputs for login",
             "result": {
               "status": "passed",
-              "duration": 2054447700
+              "duration": 8426636800
             },
-            "line": 10,
+            "line": 21,
             "match": {
               "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:7"
             }
@@ -109,27 +97,27 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "I click on \"amazonsigninSubmit\"",
+            "name": "I click on \"amazoncontinuebutton\"",
             "result": {
               "status": "passed",
-              "duration": 4097212900
+              "duration": 4404330000
             },
-            "line": 13,
+            "line": 27,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:17"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:25"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should see \"theamazonmessage\"",
+            "name": "I should see \"amazonerrormsg\"",
             "result": {
               "status": "passed",
-              "duration": 6046109000
+              "duration": 6042556700
             },
-            "line": 14,
+            "line": 28,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:20"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:28"
             }
           },
           {
@@ -137,7 +125,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 199160200
+              "duration": 16201618500
             },
             "hidden": true,
             "match": {
@@ -148,11 +136,11 @@
         "tags": [
           {
             "name": "@amazon",
-            "line": 2
+            "line": 16
           },
           {
-            "name": "@amazonlogin",
-            "line": 2
+            "name": "@newaccount",
+            "line": 16
           }
         ],
         "type": "scenario"

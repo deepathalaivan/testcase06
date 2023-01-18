@@ -4,6 +4,14 @@ module.exports = function(){
         await page.commonObjects.inputUserName(myrows[0][1]);
         await page.commonObjects.inputPassword(myrows[1][1]);
       });
+      this.When(/^I enter inputs for login$/,async function(tab){
+        const myrows=tab.rows();
+        await page.commonObjects.inputNameAndValue(myrows[0][0],myrows[0][1]);
+        await page.commonObjects.inputNameAndValue(myrows[1][0],myrows[1][1]);
+        await page.commonObjects.inputNameAndValue(myrows[2][0],myrows[2][1]);
+        await page.commonObjects.inputNameAndValue(myrows[3][0],myrows[3][1]);
+
+      });
       this.When(/^I enter single fieldvalue$/, async function (tab) {
         const myrows = tab.rows();
         return await page.commonObjects.inputNameAndValue(myrows[0][0], myrows[0][1]);

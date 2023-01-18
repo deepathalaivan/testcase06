@@ -16,8 +16,19 @@ module.exports = {
     amazonsignin: '//*[@id="nav-link-accountList-nav-line-1"]',
     amazoncontinue: '//*[@id="continue"]',
     amazonsigninSubmit: '//*[@id="signInSubmit"]',
+    amazonstarthere:'//*[@id="nav-flyout-ya-newCust"]/a',
     email: By.name("email"),
     theamazonmessage: '//*[@id="nav-logo-sprites"]',
+    amazonsignin1:'//*[@id="nav-signin-tooltip"]/a/span',
+
+    amazoncreateaccount:'//*[@id="createAccountSubmit"]',
+    customerName: By.name("customerName"),
+    passwordCheck: By.name("passwordCheck"),
+    amazoncontinuebutton:'//*[@id="continue"]',
+    amazonerrormsg:'//*[@id="authportal-main-section"]/div[2]/div/div[1]/div/div/h4',       
+     
+    amazoncontinuebutton:'//*[@id="continue"]',
+    amazonerrormsg:'//*[@id="authportal-main-section"]/div[2]/div/div[1]/div/div/div/p',
     jootzaDepartment: By.xpath('//*[@id="form31"]'),
     jootzaOrganization: By.xpath('//*[@id="form321"]'),
     jootzaCompanyAddress: By.xpath('//*[@id="form32"]'),
@@ -54,4 +65,5 @@ module.exports = {
     await driver.sleep(2000);
     return driver.findElement(selector).sendKeys(fieldvalue);
   },
+
 };

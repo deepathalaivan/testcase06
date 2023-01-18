@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" tests="7" failures="0" skipped="0">
+    <testsuite name="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" tests="6" failures="0" skipped="0">
         <properties>
             <property name="@amazon" value="true">
             </property>
-            <property name="@amazonlogin" value="true">
+            <property name="@newaccount" value="true">
             </property>
             <property name="URI" value="C:/Users/deepa/workspace/testcase06/features/amazon.feature">
             </property>
         </properties>
-        <testcase name="Given I am on amazon page" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" time="8.5568416">
+        <testcase name="Given I am on amazon page" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.49474">
         </testcase>
-        <testcase name="When I click on &quot;amazonsignin&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" time="4.4528245">
+        <testcase name="When I click on &quot;amazonsignin&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.4893595">
         </testcase>
-        <testcase name="And I enter single fieldvalue" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" time="2.1160832">
+        <testcase name="And I click on &quot;amazoncreateaccount&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.3620296">
         </testcase>
-        <testcase name="And I click on &quot;amazoncontinue&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" time="4.4754179">
+        <testcase name="And I enter inputs for login" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="8.4266368">
         </testcase>
-        <testcase name="And I enter single fieldvalue" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" time="2.0544477">
+        <testcase name="And I click on &quot;amazoncontinuebutton&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.40433">
         </testcase>
-        <testcase name="And I click on &quot;amazonsigninSubmit&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" time="4.0972129">
-        </testcase>
-        <testcase name="Then I should see &quot;theamazonmessage&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;customer-is-displayed-with-amazon.com-landing-page" time="6.046109">
+        <testcase name="Then I should see &quot;amazonerrormsg&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="6.0425567">
         </testcase>
     </testsuite>
 </testsuites>
