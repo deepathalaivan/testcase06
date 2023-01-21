@@ -1,3 +1,5 @@
+const { By } = require("selenium-webdriver");
+
 module.exports = {
   elements: {
     username: By.name("username"),
@@ -24,6 +26,8 @@ module.exports = {
     amazoncreateaccount:'//*[@id="createAccountSubmit"]',
     customerName: By.name("customerName"),
     passwordCheck: By.name("passwordCheck"),
+    "field-keywords": By.name("field-keywords"),
+    searchbuttonamazon: '//*[@id="nav-search-submit-button"]',
     amazoncontinuebutton:'//*[@id="continue"]',
     amazonerrormsg:'//*[@id="authportal-main-section"]/div[2]/div/div[1]/div/div/h4',       
      
@@ -37,6 +41,34 @@ module.exports = {
     jootzaZip: By.xpath('//*[@id="form35"]'),
     SAVE: "/html/body/mdb-root/main/div/app-profile/div/mdb-tabset/div/div/div[2]/div/mdb-tab[1]/form/div[6]/button",
     "msg updated successfully": '//*[@id="toast-container"]',
+    searchbox: '//*[@id="twotabsearchtextbox"]',
+    
+    result: '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/span/div/div/span',
+    button1: '//*[@id="nav-hamburger-menu"]/i',
+    bestseller: '//*[@id="hmenu-content"]/ul[1]/li[2]/a',
+    items: '//*[@id="CardInstanceKnmnwCLd6bZJzsg9NK_qsg"]/div/div/div/div[1]/div[1]/h2',
+
+    coupons: '//*[@id="nav-xshop"]/a[12]',
+    couponSearchTextInput: By.xpath('//*[@id="coupon-search-text-input"]'),
+    searchBestSeller: '//*[@id="coupon-search-button"]/span/input',   
+    clipcoupon: '//*[@id="a-autoid-0"]/span/input',
+    couponSearchResultHeader: '//*[@id="a-page"]/div[2]/span',
+
+    allbutton: '//*[@id="nav-hamburger-menu"]/i',
+    firetablet: '//*[@id="hmenu-content"]/ul[1]/li[10]/a/div',
+    fire7: '//*[@id="hmenu-content"]/ul[5]/li[3]/a',
+    message: '//*[@id="title"]',
+
+    register: '//*[@id="bs-example-navbar-collapse-1"]/ul/li[1]/a',
+    accessCode: By.xpath('//*[@id="accessCode"]'),
+    firstName1: By.xpath('//*[@id="firstName"]'),
+    lastName1: By.xpath('//*[@id="lastName"]'),
+    email1 : By.xpath('//*[@id="email"]'),
+    username1: By.xpath('//*[@id="username"]'),
+    password1: By.xpath('//*[@id="login-password"]'), 
+    signup1: By.xpath('//*[@id="btn-login"]/button'),
+    invalidmsg: '//*[@id="toast-container"]/mdb-toast-component/div'
+    
   },
 
   clickElement: async function (objectkey) {

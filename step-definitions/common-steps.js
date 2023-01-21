@@ -1,3 +1,5 @@
+const { Driver } = require("selenium-webdriver/chrome");
+
 module.exports = function(){
     this.When(/^I enter Inputs for the form fields$/, async function (tab) {
         const myrows = tab.rows();
@@ -12,6 +14,15 @@ module.exports = function(){
         await page.commonObjects.inputNameAndValue(myrows[3][0],myrows[3][1]);
 
       });
+      this.When(
+        /^I enter multiple inputs for the form fields$/,
+        async function (table) {
+          const myrows = table.rows();
+          for (var i = 0; i < myrows.length; i++) {
+            await page.commonObjects.inputNameAndValue(myrows[i][0],myrows[i][1]);
+          }
+        }
+      );
       this.When(/^I enter single fieldvalue$/, async function (tab) {
         const myrows = tab.rows();
         return await page.commonObjects.inputNameAndValue(myrows[0][0], myrows[0][1]);
@@ -23,9 +34,12 @@ module.exports = function(){
         return page.commonObjects.inputPassword(object1);
       });
       this.When(/^I click on "([^"]*)"$/, function (objectkey) {
-        return page.commonObjects.clickElement(objectkey);
+
+         page.commonObjects.clickElement(objectkey);
+         return driver.sleep(2000);
       });
       this.Then(/^I should see "([^"]*)"$/, function (obj) {
-        return page.commonObjects.elementExists(obj);
+         page.commonObjects.elementExists(obj);
+         return driver.sleep(2000);
       });      
 }

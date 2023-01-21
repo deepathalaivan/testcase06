@@ -28,7 +28,7 @@ Feature:AS a Customer,I want to be able to navigate the landing page so that i c
             | password  | Demo1234   |
         When I click on "jootzaAccount"
         And I enter multiple inputs for the form fields
-            | InputName      | InputValue       |
+            | InputName            | InputValue       |
             | jootzaDepartment     | Information tech |
             | jootzaOrganization   | AA               |
             | jootzaCompanyAddress | 1234,Main st     |
@@ -37,3 +37,20 @@ Feature:AS a Customer,I want to be able to navigate the landing page so that i c
             | jootzaZip            | 11011            |
         And I click on "SAVE"
         Then I should see "msg updated successfully"
+
+
+    @jootza @register
+    Scenario: Customer is tried to Register account
+        Given I am on the jootza page
+         
+        When I click on "register"
+        And I enter multiple inputs for the form fields
+            | InputName  | InputValue               |
+            | accessCode | test                     |
+            | firstName1  | deepa                    |
+            | lastName1   | kalyanasundaram          |
+            | email1      | deepathalaivan@gmail.com |
+            | username1   | deepakalya               |
+            | password1   | deepa                    |
+         And I click on "signup1"   
+        Then I should see "invalidmsg"

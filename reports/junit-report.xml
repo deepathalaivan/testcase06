@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" tests="6" failures="0" skipped="0">
+    <testsuite name="as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information;customer-is-tried-to-register-account" tests="5" failures="0" skipped="0">
         <properties>
-            <property name="@amazon" value="true">
+            <property name="@jootza" value="true">
             </property>
-            <property name="@newaccount" value="true">
+            <property name="@register" value="true">
             </property>
-            <property name="URI" value="C:/Users/deepa/workspace/testcase06/features/amazon.feature">
+            <property name="URI" value="C:/Users/deepa/workspace/testcase06/features/jootza.feature">
             </property>
         </properties>
-        <testcase name="Given I am on amazon page" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.49474">
+        <testcase name="Given I am on the jootza page" classname="as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information;customer-is-tried-to-register-account" time="3.7385008">
         </testcase>
-        <testcase name="When I click on &quot;amazonsignin&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.4893595">
+        <testcase name="When I click on &quot;register&quot;" classname="as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information;customer-is-tried-to-register-account" time="6.0242138">
         </testcase>
-        <testcase name="And I click on &quot;amazoncreateaccount&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.3620296">
+        <testcase name="And I enter multiple inputs for the form fields" classname="as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information;customer-is-tried-to-register-account" time="12.8730731">
         </testcase>
-        <testcase name="And I enter inputs for login" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="8.4266368">
+        <testcase name="And I click on &quot;signup1&quot;" classname="as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information;customer-is-tried-to-register-account" time="6.0167163">
         </testcase>
-        <testcase name="And I click on &quot;amazoncontinuebutton&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="4.40433">
-        </testcase>
-        <testcase name="Then I should see &quot;amazonerrormsg&quot;" classname="as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg" time="6.0425567">
+        <testcase name="Then I should see &quot;invalidmsg&quot;" classname="as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information;customer-is-tried-to-register-account" time="4.0106182">
         </testcase>
     </testsuite>
 </testsuites>

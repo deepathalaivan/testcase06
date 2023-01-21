@@ -2,48 +2,35 @@
   {
     "elements": [
       {
-        "id": "as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information;creating-new-customer-in-amazon-with-exciting-email-id-so-that-it-shows-error-msg",
+        "id": "as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information;customer-is-tried-to-register-account",
         "keyword": "Scenario",
-        "line": 17,
-        "name": "Creating new customer in amazon with exciting email id so that it shows error msg",
+        "line": 43,
+        "name": "Customer is tried to Register account",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "I am on amazon page",
+            "name": "I am on the jootza page",
             "result": {
               "status": "passed",
-              "duration": 4494740000
+              "duration": 3738500800
             },
-            "line": 18,
+            "line": 44,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\amazon-steps.js:4"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\jootza-steps.js:5"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"amazonsignin\"",
+            "name": "I click on \"register\"",
             "result": {
               "status": "passed",
-              "duration": 4489359500
+              "duration": 6024213800
             },
-            "line": 19,
+            "line": 46,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"amazoncreateaccount\"",
-            "result": {
-              "status": "passed",
-              "duration": 4362029600
-            },
-            "line": 20,
-            "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:25"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:36"
             }
           },
           {
@@ -58,66 +45,78 @@
                   },
                   {
                     "cells": [
-                      "customerName",
+                      "accessCode",
+                      "test"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "firstName1",
                       "deepa"
                     ]
                   },
                   {
                     "cells": [
-                      "email",
+                      "lastName1",
+                      "kalyanasundaram"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email1",
                       "deepathalaivan@gmail.com"
                     ]
                   },
                   {
                     "cells": [
-                      "password",
-                      "deepa123"
+                      "username1",
+                      "deepakalya"
                     ]
                   },
                   {
                     "cells": [
-                      "passwordCheck",
-                      "deepa123"
+                      "password1",
+                      "deepa"
                     ]
                   }
                 ]
               }
             ],
             "keyword": "And ",
-            "name": "I enter inputs for login",
+            "name": "I enter multiple inputs for the form fields",
             "result": {
               "status": "passed",
-              "duration": 8426636800
+              "duration": 12873073100
             },
-            "line": 21,
+            "line": 47,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:7"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:17"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "I click on \"amazoncontinuebutton\"",
+            "name": "I click on \"signup1\"",
             "result": {
               "status": "passed",
-              "duration": 4404330000
+              "duration": 6016716300
             },
-            "line": 27,
+            "line": 55,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:25"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:36"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should see \"amazonerrormsg\"",
+            "name": "I should see \"invalidmsg\"",
             "result": {
               "status": "passed",
-              "duration": 6042556700
+              "duration": 4010618200
             },
-            "line": 28,
+            "line": 56,
             "match": {
-              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:28"
+              "location": "C:\\Users\\deepa\\workspace\\testcase06\\step-definitions\\common-steps.js:41"
             }
           },
           {
@@ -125,7 +124,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 16201618500
+              "duration": 361496900
             },
             "hidden": true,
             "match": {
@@ -135,22 +134,22 @@
         ],
         "tags": [
           {
-            "name": "@amazon",
-            "line": 16
+            "name": "@jootza",
+            "line": 42
           },
           {
-            "name": "@newaccount",
-            "line": 16
+            "name": "@register",
+            "line": 42
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "as-a-customer-i-want-to-be-able-to-navigate-amazon-page-so-that-i-can-view-information",
+    "id": "as-a-customer,i-want-to-be-able-to-navigate-the-landing-page-so-that-i-can-view-the-information",
     "keyword": "Feature",
     "line": 1,
-    "name": "As a Customer I want to be able to navigate amazon page so that i can view information",
+    "name": "AS a Customer,I want to be able to navigate the landing page so that i can view the information",
     "tags": [],
-    "uri": "C:/Users/deepa/workspace/testcase06/features/amazon.feature"
+    "uri": "C:/Users/deepa/workspace/testcase06/features/jootza.feature"
   }
 ]

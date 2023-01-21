@@ -20,15 +20,7 @@ module.exports = function() {
     }
   );
 
-  this.When(
-    /^I enter multiple inputs for the form fields$/,
-    async function (table) {
-      const myrows = table.rows();
-      for (var i = 0; i < myrows.length; i++) {
-        await page.commonObjects.inputNameAndValue(myrows[i][0],myrows[i][1]);
-      }
-    }
-  );
+  
   this.Given(
     /^I am logged  into jootza website with inputfields$/,
     async function (table) {
